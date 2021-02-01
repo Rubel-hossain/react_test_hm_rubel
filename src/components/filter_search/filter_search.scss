@@ -1,0 +1,63 @@
+#find {
+  background: rgba(0, 0, 0, 0.61) !important;
+  padding: 15px 10px;
+  position: absolute;
+  width: 100%;
+  margin-top: -78px;
+}
+.inner {
+  margin-left: 2%;
+}
+#find .form-control {
+  padding: 6px;
+  font-size: 12px;
+  line-height: 1.42857143;
+  text-align: center;
+  border: 1px solid transparent;
+  border-radius: 0;
+  height: 45px;
+}
+#find .btn {
+  border-radius: 0;
+  height: 45px;
+  border: none;
+}
+#find .form-control:focus {
+  border-color: transparent;
+  box-shadow: 0;
+}
+
+@media screen and (max-width: 991px) {
+  #find {
+    padding-top: 5px;
+    padding-bottom: 2px;
+  }
+  .inner {
+    margin-left: 0;
+  }
+  #find .btn {
+    position: absolute;
+    margin-top: 12px;
+    left: -140%;
+    height: 35px;
+    border: none;
+    width: 118px;
+    border-radius: 20px;
+  }
+  #find .form-control {
+    height: 30px;
+  }
+  .find_second_part {
+    margin-top: 35px;
+  }
+}
+@media screen and (max-width: 425px) {
+  #find .btn {
+    left: -160%;
+  }
+}
+@media screen and (max-width: 425px) {
+  #find .btn {
+    left: -160%;
+  }
+}

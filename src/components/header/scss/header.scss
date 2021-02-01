@@ -1,0 +1,32 @@
+.navbar-brand {
+    height: 100px;
+    width: 100px;
+    float: left;
+    margin: 2px;
+} 
+.navbar-brand {
+  img {
+  	display: block;
+    background-color: #fff;
+    border-radius: 50%;
+    padding: 2px;
+    border: 1px solid #693b52;
+  }
+}
+.main-menu li {
+
+}
+.main-menu {
+    position: absolute;
+    z-index: 9;
+    width: 100%;
+  .nav-link {
+  	background-color: #693b52;
+    margin-right: 10px;
+    border-radius: 20px;
+    text-transform: capitalize;
+    font-size: 13px;
+    color: #fff !important;
+    padding: 10px 15px !important;
+  }
+}

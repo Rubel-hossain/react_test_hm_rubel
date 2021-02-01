@@ -1,0 +1,100 @@
+#footer {
+    background-image: url(https://i.ibb.co/QHk5g3d/footer.jpg);
+    position: relative;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    padding-bottom: 50px;
+    color: #fff;
+}
+#footer h4 {
+    font-family: 'Courgette', cursive;
+}
+.footer_overlay {
+    background-color: rgba(111, 47, 65, 0.83);
+    position: absolute;
+    height: 100%;
+    width: 100%}
+.footers_content {
+    padding-left: 35px;
+}
+.footers_list li {
+    list-style: none;
+    margin-top: 10px;
+}
+.footers_list li a {
+    text-decoration: none;
+    color: #fff;
+}
+.footers_list li a:hover {
+    text-decoration: none;
+    color: #fff;
+}
+.footer_parts {
+    margin-top: 50px;
+}
+#social a {
+    text-align: center;
+}
+#social {
+    margin-top: 50px;
+    position: relative;
+}
+#social img {
+    height: 35px;
+    width: auto;
+    float: left;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+#banks_and_app_store {
+    margin-top: 50px;
+}
+#banks_and_app_store .address {
+    font-style: italic;
+    display: inline-flex;
+}
+.banks img {
+    height: 50px;
+    width: 50px;
+    float: left;
+    margin: 8px;
+    border-radius: 10px;
+}
+.app_store img {
+    height: 35px;
+    width: auto;
+    float: left;
+    margin: 8px;
+    border-radius: 10px;
+}
+#tiny_footer {
+    background-color: #693b52;
+    color: #fff;
+    padding: 4px;
+}
+@media (max-width: 768px) {
+    .navbar-right {
+    margin-top: 25px;
+}
+}@media (max-width: 765px) {
+    .navbar-right {
+    margin-top: 0;
+}
+}@media screen and (max-width: 994px) {
+    .office_time {
+    display: none;
+}
+}@media screen and (max-width: 769px) {
+    .all_nav_buttons {
+    margin-top: -80px;
+}
+}@media screen and (max-width: 430px) {
+    .nav_buttons .hm_register_btn {
+    display: none;
+}
+}@media screen and (max-width: 769px) {
+    .all_nav_buttons {
+    margin-top: -80px;
+}
+}
