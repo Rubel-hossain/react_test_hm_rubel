@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 import Slider from "react-slick";
+import SimpleReactLightbox, { SRLWrapper } from "simple-react-lightbox";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import "./gallery.scss";
@@ -33,106 +34,38 @@ export default function Index() {
               <h2 className="text-center">Gallery</h2>
               <div className="row glry_img ">
                 <div className="col-md-12">
-                  <Slider {...settings}>
-                    <div className="single-gallery">
-                      <a role="button" href="#">
-                        <img
-                          className="img-fluid"
-                          src="https://www.hmweddings.com/uploads/home_gallery/3090dbd1fdb533f021b8efbdef89bc08.webp"
-                        />
-                      </a>
-                    </div>
-                    <div className="single-gallery">
-                      <a role="button" href="#">
-                        <img
-                          className="img-fluid"
-                          src="https://www.hmweddings.com/uploads/home_gallery/3090dbd1fdb533f021b8efbdef89bc08.webp"
-                        />
-                      </a>
-                    </div>
-                    <div className="single-gallery">
-                      <a role="button" href="#">
-                        <img
-                          className="img-fluid"
-                          src="https://www.hmweddings.com/uploads/home_gallery/3090dbd1fdb533f021b8efbdef89bc08.webp"
-                        />
-                      </a>
-                    </div>
-                    <div className="single-gallery">
-                      <a role="button" href="#">
-                        <img
-                          className="img-fluid"
-                          src="https://www.hmweddings.com/uploads/home_gallery/3090dbd1fdb533f021b8efbdef89bc08.webp"
-                        />
-                      </a>
-                    </div>
-                    <div className="single-gallery">
-                      <a role="button" href="#">
-                        <img
-                          className="img-fluid"
-                          src="https://www.hmweddings.com/uploads/home_gallery/3090dbd1fdb533f021b8efbdef89bc08.webp"
-                        />
-                      </a>
-                    </div>
-                    <div className="single-gallery">
-                      <a role="button" href="#">
-                        <img
-                          className="img-fluid"
-                          src="https://www.hmweddings.com/uploads/home_gallery/3090dbd1fdb533f021b8efbdef89bc08.webp"
-                        />
-                      </a>
-                    </div>
-                    <div className="single-gallery">
-                      <a role="button" href="#">
-                        <img
-                          className="img-fluid"
-                          src="https://www.hmweddings.com/uploads/home_gallery/3090dbd1fdb533f021b8efbdef89bc08.webp"
-                        />
-                      </a>
-                    </div>
-                    <div className="single-gallery">
-                      <a role="button" href="#">
-                        <img
-                          className="img-fluid"
-                          src="https://www.hmweddings.com/uploads/home_gallery/3090dbd1fdb533f021b8efbdef89bc08.webp"
-                        />
-                      </a>
-                    </div>
-                    <div className="single-gallery">
-                      <a role="button" href="#">
-                        <img
-                          className="img-fluid"
-                          src="https://www.hmweddings.com/uploads/home_gallery/3090dbd1fdb533f021b8efbdef89bc08.webp"
-                        />
-                      </a>
-                    </div>
-                    <div className="single-gallery">
-                      <a role="button" href="#">
-                        <img
-                          className="img-fluid"
-                          src="https://www.hmweddings.com/uploads/home_gallery/3090dbd1fdb533f021b8efbdef89bc08.webp"
-                        />
-                      </a>
-                    </div>
-                    <div className="single-gallery">
-                      <a role="button" href="#">
-                        <img
-                          className="img-fluid"
-                          src="https://www.hmweddings.com/uploads/home_gallery/3090dbd1fdb533f021b8efbdef89bc08.webp"
-                        />
-                      </a>
-                    </div>
-                  </Slider>
-                  <Slider {...settings}>
-                    <div className="single-gallery">
-                      <a role="button" href="#">
-                        <img
-                          className="img-fluid"
-                          src="https://www.hmweddings.com/uploads/home_gallery/3090dbd1fdb533f021b8efbdef89bc08.webp"
-                        />
-                      </a>
-                    </div>
-                  </Slider>
+                  <SimpleReactLightbox>
+                    <SRLWrapper>
+                      <Slider {...settings}>
+                        {sliderImages.slice(0, 8).map((gallery) => (
+                          <div className="single-gallery" key={gallery.id}>
+                            <a role="button" href={gallery.webformatURL}>
+                              <img
+                                className="img-fluid"
+                                src={gallery.webformatURL}
+                              />
+                            </a>
+                          </div>
+                        ))}
+                      </Slider>
+                    </SRLWrapper>
+                  </SimpleReactLightbox>
+                  <SimpleReactLightbox>
+                    <SRLWrapper>
+                      <Slider {...settings}>
+                        {sliderImages.slice(8, 16).map((gallery) => (
+                          <div className="single-gallery" key={gallery.id}>
+                            <a role="button" href={gallery.webformatURL}>
+                              <img
+                                className="img-fluid"
+                                src={gallery.webformatURL}
+                              />
+                            </a>
+                          </div>
+                        ))}
+                      </Slider>
+                    </SRLWrapper>
+                  </SimpleReactLightbox>
                 </div>
               </div>
             </div>
@@ -145,7 +78,7 @@ export default function Index() {
       <div className="container">
         <div className="row">
           <div className="col-md-12">
-            <h3>Loading............</h3>
+            <p>Loading............</p>
           </div>
         </div>
       </div>

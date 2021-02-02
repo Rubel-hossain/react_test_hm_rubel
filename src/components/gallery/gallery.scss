@@ -11,3 +11,11 @@
     padding: 5px;
   }
 }
+#bg_gallery {
+  .slick-slide {
+    img {
+      height: 130px;
+      object-fit: cover;
+    }
+  }
+}

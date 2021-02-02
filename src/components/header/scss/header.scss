@@ -1,27 +1,24 @@
 .navbar-brand {
-    height: 100px;
-    width: 100px;
-    float: left;
-    margin: 2px;
-} 
+  height: 100px;
+  width: 100px;
+  float: left;
+  margin: 2px;
+}
 .navbar-brand {
   img {
-  	display: block;
+    display: block;
     background-color: #fff;
     border-radius: 50%;
     padding: 2px;
     border: 1px solid #693b52;
   }
 }
-.main-menu li {
-
-}
 .main-menu {
-    position: absolute;
-    z-index: 9;
-    width: 100%;
+  position: absolute;
+  z-index: 9;
+  width: 100%;
   .nav-link {
-  	background-color: #693b52;
+    background-color: #693b52;
     margin-right: 10px;
     border-radius: 20px;
     text-transform: capitalize;
@@ -29,4 +26,75 @@
     color: #fff !important;
     padding: 10px 15px !important;
   }
+}
+/***************
+Sidebar 
+**********************/
+#side_menu {
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+#side_menu {
+  position: fixed;
+  width: 250px;
+  top: 0;
+  right: 0;
+  margin-right: -250px;
+  z-index: 5000;
+  overflow: auto;
+  transition: all 0.4s linear 0s;
+  &.open-sidebar {
+    right: 250px;
+  }
+}
+#side_menu {
+  padding: 15px;
+}
+.side_menu_log_reg a {
+  color: #fff;
+  background: #693b52;
+  padding: 10px;
+  display: block;
+  margin: 10px 0;
+  border-radius: 25px;
+  text-align: center;
+}
+.side_menu_log_reg a:hover {
+  text-decoration: none;
+}
+.side_menus_menu a {
+  color: #fff;
+  font-weight: 200;
+  text-decoration: none;
+  display: block;
+  margin: 3px 0;
+  padding: 5px;
+}
+.side_menus_menu a:hover {
+  color: #fff;
+  font-weight: 200;
+  text-decoration: none;
+  display: block;
+  margin: 3px 0;
+  padding: 5px;
+  background: #693b52;
+  transition: 0.5s;
+}
+.side_menu_contacts {
+  margin-top: 20px;
+  color: #fff;
+  font-weight: 200;
+}
+.side_menu_contacts ul li {
+  list-style: none;
+}
+.side_menu_follow_us i {
+  color: #fff;
+  background: #693b52;
+  padding: 2px 4px;
+  margin-right: 2px;
+}
+.side_menu_close i {
+  color: #693b52;
+  font-size: 24px;
 }

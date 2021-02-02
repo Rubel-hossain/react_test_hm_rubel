@@ -1,27 +1,29 @@
-import Header from "./header"
-import HeroArea from "./hero_area";
-import StickyNews from "./sticky_news";
-import MembersSlider from "./members_slider";
-import HappyStory from "./happy_story_carousel";
-import Footer from "./footer";
-import Test from "./test";
-import CopyrightText from "./copyright";
-import VideosArea from "./videos_area"
-import Gallery from "./gallery";
+import Home from "../pages/home";
+import Login from "../pages/login";
+import Registration from "../pages/registration";
+import {
+  BrowserRouter as Router,
+  Switch,
+  Route
+} from "react-router-dom";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "../assets/scss/global.scss";
 function App() {
   return (
     <div className="App">
-       <Header/>
-      <HeroArea/>
-      <StickyNews/>
-      <MembersSlider/>
-      <HappyStory/>
-      <VideosArea/>
-      <Gallery/>
-      <Footer/>
-      <CopyrightText/>
+      <Router>
+        <Switch>
+          <Route path="/login">
+             <Login/>
+          </Route>
+          <Route path="/registration">
+             <Registration/>
+          </Route>
+          <Route path="/" exact={true}>
+            <Home/>
+          </Route>
+        </Switch>
+      </Router>
     </div>
   );
 }
